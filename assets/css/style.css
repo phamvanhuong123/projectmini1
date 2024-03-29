@@ -374,7 +374,7 @@
 .section-seven{
   background-color: var(--color-bg2);
   text-align: center;
-  padding: 100px;
+  padding: 100px 0;
 }
 .section-seven  .titile{
   font-size: 20px;
@@ -437,27 +437,24 @@
 .section-eight{
   background-color: var(--color-bg2);
 }
-.section-eight .inner-background{
-  background-image: url(../../image/background3.jpg);
-  background-repeat: no-repeat;
+.section-eight .inner-background img{
   width: 100%;
   height: 500px;
-  background-size: cover;
-  /* background-position: center center; */
   border-radius: 10px;
-  padding:0 50px;
-  position: relative;
+  object-fit: cover;
+}
+.section-eight .main{
+  padding: 0 70px;
 }
 .section-eight .inner-wrap{
+  position: relative;
   display: flex;
-
   background-color: #fff;
-  position: absolute;
   padding: 15px 30px;
-  width: 90%;
   align-items: center;
   border-radius: 10px;
-  bottom: -100px;
+  margin-top: -50px;
+ z-index: 11;
   /* justify-content: space-between  ; */
   
 }
